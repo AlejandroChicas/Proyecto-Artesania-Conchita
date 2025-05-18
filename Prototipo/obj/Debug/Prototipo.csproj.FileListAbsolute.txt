@@ -1,0 +1,274 @@
+C:\Users\josec\source\repos\Prototipo\Prototipo\bin\Debug\Prototipo.exe.config
+C:\Users\josec\source\repos\Prototipo\Prototipo\bin\Debug\Prototipo.exe
+C:\Users\josec\source\repos\Prototipo\Prototipo\bin\Debug\Prototipo.pdb
+C:\Users\josec\source\repos\Prototipo\Prototipo\obj\Debug\Prototipo.csproj.AssemblyReference.cache
+C:\Users\josec\source\repos\Prototipo\Prototipo\obj\Debug\Prototipo.Form1.resources
+C:\Users\josec\source\repos\Prototipo\Prototipo\obj\Debug\Prototipo.Form2.resources
+C:\Users\josec\source\repos\Prototipo\Prototipo\obj\Debug\Prototipo.Properties.Resources.resources
+C:\Users\josec\source\repos\Prototipo\Prototipo\obj\Debug\Prototipo.csproj.GenerateResource.cache
+C:\Users\josec\source\repos\Prototipo\Prototipo\obj\Debug\Prototipo.csproj.CoreCompileInputs.cache
+C:\Users\josec\source\repos\Prototipo\Prototipo\obj\Debug\Prototipo.exe
+C:\Users\josec\source\repos\Prototipo\Prototipo\obj\Debug\Prototipo.pdb
+C:\Users\josec\source\repos\Prototipo\Prototipo\obj\Debug\Prototipo.Form3.resources
+C:\Users\josec\source\repos\Prototipo\Prototipo\obj\Debug\Prototipo.Form4.resources
+C:\Users\josec\source\repos\Prototipo\Prototipo\obj\Debug\Prototipo.Form5.resources
+C:\Users\josec\source\repos\Prototipo\Prototipo\obj\Debug\Prototipo.Form6.resources
+C:\Users\josec\source\repos\Prototipo\Prototipo\obj\Debug\Prototipo.Form7.resources
+C:\Users\josec\source\repos\Prototipo\Prototipo\obj\Debug\Prototipo.Form8.resources
+C:\Users\josec\source\repos\Prototipo\Prototipo\obj\Debug\Prototipo.Form9.resources
+C:\Users\josec\source\repos\Prototipo\Prototipo\obj\Debug\Prototipo.Form10.resources
+C:\Users\josec\source\repos\Prototipo\Prototipo\obj\Debug\Prototipo.Form11.resources
+C:\Users\josec\source\repos\Prototipo\Prototipo\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\josec\source\repos\Prototipo\Prototipo\bin\Debug\FireSharp.dll
+C:\Users\josec\source\repos\Prototipo\Prototipo\bin\Debug\FireSharp.Serialization.JsonNet.dll
+C:\Users\josec\source\repos\Prototipo\Prototipo\bin\Debug\Google.Protobuf.dll
+C:\Users\josec\source\repos\Prototipo\Prototipo\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\josec\source\repos\Prototipo\Prototipo\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\josec\source\repos\Prototipo\Prototipo\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\josec\source\repos\Prototipo\Prototipo\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\josec\source\repos\Prototipo\Prototipo\bin\Debug\MySql.Data.dll
+C:\Users\josec\source\repos\Prototipo\Prototipo\bin\Debug\Newtonsoft.Json.dll
+C:\Users\josec\source\repos\Prototipo\Prototipo\bin\Debug\RestSharp.dll
+C:\Users\josec\source\repos\Prototipo\Prototipo\bin\Debug\System.Buffers.dll
+C:\Users\josec\source\repos\Prototipo\Prototipo\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\josec\source\repos\Prototipo\Prototipo\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\josec\source\repos\Prototipo\Prototipo\bin\Debug\System.IO.Pipelines.dll
+C:\Users\josec\source\repos\Prototipo\Prototipo\bin\Debug\System.Memory.dll
+C:\Users\josec\source\repos\Prototipo\Prototipo\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\josec\source\repos\Prototipo\Prototipo\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\josec\source\repos\Prototipo\Prototipo\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\josec\source\repos\Prototipo\Prototipo\bin\Debug\ZstdSharp.dll
+C:\Users\josec\source\repos\Prototipo\Prototipo\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\josec\source\repos\Prototipo\Prototipo\bin\Debug\Google.Protobuf.pdb
+C:\Users\josec\source\repos\Prototipo\Prototipo\bin\Debug\Google.Protobuf.xml
+C:\Users\josec\source\repos\Prototipo\Prototipo\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\josec\source\repos\Prototipo\Prototipo\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\josec\source\repos\Prototipo\Prototipo\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\josec\source\repos\Prototipo\Prototipo\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\josec\source\repos\Prototipo\Prototipo\bin\Debug\MySql.Data.xml
+C:\Users\josec\source\repos\Prototipo\Prototipo\bin\Debug\Newtonsoft.Json.xml
+C:\Users\josec\source\repos\Prototipo\Prototipo\bin\Debug\RestSharp.xml
+C:\Users\josec\source\repos\Prototipo\Prototipo\bin\Debug\System.Buffers.xml
+C:\Users\josec\source\repos\Prototipo\Prototipo\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\josec\source\repos\Prototipo\Prototipo\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\josec\source\repos\Prototipo\Prototipo\bin\Debug\System.IO.Pipelines.xml
+C:\Users\josec\source\repos\Prototipo\Prototipo\bin\Debug\System.Memory.xml
+C:\Users\josec\source\repos\Prototipo\Prototipo\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\josec\source\repos\Prototipo\Prototipo\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\josec\source\repos\Prototipo\Prototipo\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\josec\source\repos\Prototipo\Prototipo\obj\Debug\Prototipo.csproj.Up2Date
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\obj\Debug\Prototipo.csproj.AssemblyReference.cache
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\obj\Debug\Prototipo.exe
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\obj\Debug\Prototipo.pdb
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\bin\Debug\Prototipo.exe.config
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\bin\Debug\Prototipo.exe
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\bin\Debug\Prototipo.pdb
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\bin\Debug\EntityFramework.dll
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\bin\Debug\FireSharp.dll
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\bin\Debug\FireSharp.Serialization.JsonNet.dll
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\bin\Debug\Google.Protobuf.dll
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\bin\Debug\MySql.Data.dll
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\bin\Debug\Newtonsoft.Json.dll
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\bin\Debug\RestSharp.dll
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\bin\Debug\System.Buffers.dll
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\bin\Debug\System.Data.SQLite.dll
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\bin\Debug\System.IO.Pipelines.dll
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\bin\Debug\System.Memory.dll
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\bin\Debug\ZstdSharp.dll
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\bin\Debug\EntityFramework.xml
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\bin\Debug\Google.Protobuf.pdb
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\bin\Debug\Google.Protobuf.xml
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\bin\Debug\MySql.Data.xml
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\bin\Debug\Newtonsoft.Json.xml
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\bin\Debug\RestSharp.xml
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\bin\Debug\System.Buffers.xml
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\bin\Debug\System.Data.SQLite.xml
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\bin\Debug\System.IO.Pipelines.xml
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\bin\Debug\System.Memory.xml
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\obj\Debug\Prototipo.Form1.resources
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\obj\Debug\Prototipo.Form10.resources
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\obj\Debug\Prototipo.Form11.resources
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\obj\Debug\Prototipo.Form2.resources
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\obj\Debug\Prototipo.Form3.resources
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\obj\Debug\Prototipo.Form4.resources
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\obj\Debug\Prototipo.Form5.resources
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\obj\Debug\Prototipo.Form6.resources
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\obj\Debug\Prototipo.Form7.resources
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\obj\Debug\Prototipo.Form8.resources
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\obj\Debug\Prototipo.Form9.resources
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\obj\Debug\Prototipo.Properties.Resources.resources
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\obj\Debug\Prototipo.csproj.GenerateResource.cache
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\obj\Debug\Prototipo.csproj.CoreCompileInputs.cache
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\obj\Debug\Prototipo.csproj.Up2Date
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\bin\Debug\Prototipo.exe.manifest
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\bin\Debug\Prototipo.application
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\obj\Debug\Prototipo.exe.manifest
+C:\Users\josue\Downloads\Prototipo (1)\Prototipo\Prototipo\obj\Debug\Prototipo.application
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\bin\Debug\Prototipo.exe.config
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\bin\Debug\Prototipo.exe.manifest
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\bin\Debug\Prototipo.application
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\bin\Debug\Prototipo.exe
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\bin\Debug\Prototipo.pdb
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\bin\Debug\EntityFramework.dll
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\bin\Debug\FireSharp.dll
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\bin\Debug\FireSharp.Serialization.JsonNet.dll
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\bin\Debug\Google.Protobuf.dll
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\bin\Debug\MySql.Data.dll
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\bin\Debug\Newtonsoft.Json.dll
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\bin\Debug\RestSharp.dll
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\bin\Debug\System.Buffers.dll
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\bin\Debug\System.Data.SQLite.dll
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\bin\Debug\System.IO.Pipelines.dll
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\bin\Debug\System.Memory.dll
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\bin\Debug\ZstdSharp.dll
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\bin\Debug\EntityFramework.xml
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\bin\Debug\Google.Protobuf.pdb
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\bin\Debug\Google.Protobuf.xml
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\bin\Debug\MySql.Data.xml
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\bin\Debug\Newtonsoft.Json.xml
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\bin\Debug\RestSharp.xml
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\bin\Debug\System.Buffers.xml
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\bin\Debug\System.Data.SQLite.xml
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\bin\Debug\System.IO.Pipelines.xml
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\bin\Debug\System.Memory.xml
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\obj\Debug\Prototipo.csproj.AssemblyReference.cache
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\obj\Debug\Prototipo.Form1.resources
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\obj\Debug\Prototipo.Form10.resources
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\obj\Debug\Prototipo.Form11.resources
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\obj\Debug\Prototipo.Form2.resources
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\obj\Debug\Prototipo.Form3.resources
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\obj\Debug\Prototipo.Form4.resources
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\obj\Debug\Prototipo.Form5.resources
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\obj\Debug\Prototipo.Form6.resources
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\obj\Debug\Prototipo.Form7.resources
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\obj\Debug\Prototipo.Form8.resources
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\obj\Debug\Prototipo.Form9.resources
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\obj\Debug\Prototipo.Properties.Resources.resources
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\obj\Debug\Prototipo.csproj.GenerateResource.cache
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\obj\Debug\Prototipo.csproj.CoreCompileInputs.cache
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\obj\Debug\Prototipo.exe.manifest
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\obj\Debug\Prototipo.application
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\obj\Debug\Prototipo.csproj.Up2Date
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\obj\Debug\Prototipo.exe
+C:\Users\josue\OneDrive\Escritorio\Prototipo\Prototipo\obj\Debug\Prototipo.pdb
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\Prototipo.exe.config
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\Prototipo.exe.manifest
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\Prototipo.application
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\Prototipo.exe
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\Prototipo.pdb
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\EntityFramework.dll
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\FireSharp.dll
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\FireSharp.Serialization.JsonNet.dll
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\Google.Protobuf.dll
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\MySql.Data.dll
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\Newtonsoft.Json.dll
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\RestSharp.dll
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\System.Buffers.dll
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\System.Data.SQLite.dll
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\System.IO.Pipelines.dll
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\System.Memory.dll
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\ZstdSharp.dll
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\EntityFramework.xml
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\Google.Protobuf.pdb
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\Google.Protobuf.xml
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\MySql.Data.xml
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\Newtonsoft.Json.xml
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\RestSharp.xml
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\System.Buffers.xml
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\System.Data.SQLite.xml
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\System.IO.Pipelines.xml
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\System.Memory.xml
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\obj\Debug\Prototipo.csproj.AssemblyReference.cache
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\obj\Debug\Prototipo.Ayuda.resources
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\obj\Debug\Prototipo.Form1.resources
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\obj\Debug\Prototipo.Form11.resources
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\obj\Debug\Prototipo.Form2.resources
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\obj\Debug\Prototipo.Form3.resources
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\obj\Debug\Prototipo.Form4.resources
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\obj\Debug\Prototipo.Form5.resources
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\obj\Debug\Prototipo.Form6.resources
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\obj\Debug\Prototipo.Form7.resources
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\obj\Debug\Prototipo.Form8.resources
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\obj\Debug\Prototipo.Form9.resources
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\obj\Debug\Prototipo.Properties.Resources.resources
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\obj\Debug\Prototipo.csproj.GenerateResource.cache
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\obj\Debug\Prototipo.csproj.CoreCompileInputs.cache
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\obj\Debug\Prototipo.exe.manifest
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\obj\Debug\Prototipo.application
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\obj\Debug\Prototipo.csproj.Up2Date
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\obj\Debug\Prototipo.exe
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\obj\Debug\Prototipo.pdb
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\obj\Debug\Prototipo.Inventario.resources
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\obj\Debug\Prototipo.exe.config
