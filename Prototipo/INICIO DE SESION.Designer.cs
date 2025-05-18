@@ -110,7 +110,7 @@ namespace Prototipo
             // btninicio
             // 
             this.btninicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btninicio.Location = new System.Drawing.Point(581, 470);
+            this.btninicio.Location = new System.Drawing.Point(581, 453);
             this.btninicio.Name = "btninicio";
             this.btninicio.Size = new System.Drawing.Size(147, 33);
             this.btninicio.TabIndex = 7;
@@ -121,7 +121,7 @@ namespace Prototipo
             // btnregistro
             // 
             this.btnregistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnregistro.Location = new System.Drawing.Point(896, 470);
+            this.btnregistro.Location = new System.Drawing.Point(896, 453);
             this.btnregistro.Name = "btnregistro";
             this.btnregistro.Size = new System.Drawing.Size(183, 33);
             this.btnregistro.TabIndex = 8;
