@@ -49,7 +49,8 @@ namespace Prototipo
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();
-                string query = "INSERT INTO RegistroVentas (Codigo , Fecha , Nombre , Descripcion , Cantidad , PrecioUnitario , PrecioTotal ,TotalFinal) VALUES (@Codigo, @Fecha, @Nombre, @Descripcion, @Cantidad, @PrecioUnitario, @PrecioTotal, @Totalfinal)";
+                string query = "INSERT INTO RegistroVentas (Codigo , Fecha , Nombre , Descripcion , Cantidad , PrecioUnitario , PrecioTotal ,TotalFinal) VALUES (@Codigo, @Fecha, @Nombre, @Descripcion, @Cantidad, @PrecioUnitario, @PrecioTotal, @TotalFinal)";
+
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
                     command.Parameters.AddWithValue("@Codigo", txtCodigo.Text);
@@ -62,6 +63,7 @@ namespace Prototipo
                     command.Parameters.AddWithValue("@TotalFinal", txtTotalFinal.Text);
 
                     command.ExecuteNonQuery();
+                    MessageBox.Show("Registro de venta guardado correctamente.");
                 }
             }
             CargarDatos();
@@ -182,7 +184,7 @@ namespace Prototipo
 
         }
 
-        private void label6_Click(object sender, EventArgs e)
+        private void PrecioUnitario_Click(object sender, EventArgs e)
         {
 
         }
@@ -253,6 +255,41 @@ namespace Prototipo
         }
 
         private void TotalFinal_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Nombre_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Codigo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Cantidad_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Descripcion_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PrecioTotal_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FechaVenta_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TotalFinal_Click(object sender, EventArgs e)
         {
 
         }
