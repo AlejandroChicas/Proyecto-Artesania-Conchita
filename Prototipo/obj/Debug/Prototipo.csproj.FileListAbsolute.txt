@@ -278,3 +278,4 @@ C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\obj\Debug\Protot
 C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\obj\Debug\Prototipo.Ayuda_de_Creacion_de_Cuentas.resources
 C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\obj\Debug\Prototipo.Ayuda_de_Registro_de_Compra.resources
 C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\obj\Debug\Prototipo.Ayuda_de_Registro_de_Ventas.resources
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\obj\Debug\Prototipo.Ayuda_de_Cerrar_Sesion.resources
