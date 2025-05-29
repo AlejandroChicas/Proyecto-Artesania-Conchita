@@ -57,7 +57,10 @@
             this.dgvClientes = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label10
@@ -263,7 +266,7 @@
             // btnNuevo
             // 
             this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevo.Location = new System.Drawing.Point(656, 547);
+            this.btnNuevo.Location = new System.Drawing.Point(558, 543);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(105, 43);
             this.btnNuevo.TabIndex = 48;
@@ -274,7 +277,7 @@
             // btnBuscar
             // 
             this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.Location = new System.Drawing.Point(800, 547);
+            this.btnBuscar.Location = new System.Drawing.Point(702, 543);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(104, 43);
             this.btnBuscar.TabIndex = 49;
@@ -285,7 +288,7 @@
             // btnRegistro
             // 
             this.btnRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistro.Location = new System.Drawing.Point(944, 547);
+            this.btnRegistro.Location = new System.Drawing.Point(846, 543);
             this.btnRegistro.Name = "btnRegistro";
             this.btnRegistro.Size = new System.Drawing.Size(129, 43);
             this.btnRegistro.TabIndex = 50;
@@ -324,7 +327,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(493, 547);
+            this.button1.Location = new System.Drawing.Point(395, 543);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(129, 43);
             this.button1.TabIndex = 54;
@@ -335,7 +338,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(1107, 547);
+            this.button2.Location = new System.Drawing.Point(1009, 543);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(129, 43);
             this.button2.TabIndex = 55;
@@ -343,12 +346,35 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(1198, 543);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(98, 41);
+            this.button3.TabIndex = 65;
+            this.button3.Text = "Ayuda";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Prototipo.Properties.Resources.Captura_de_pantalla_2025_05_09_152102;
+            this.pictureBox2.Location = new System.Drawing.Point(1302, 543);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(46, 42);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 66;
+            this.pictureBox2.TabStop = false;
+            // 
             // Form7
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
             this.ClientSize = new System.Drawing.Size(1492, 627);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dgvClientes);
@@ -382,6 +408,7 @@
             this.Text = "Artesanias Conchita - Registro de cliente";
             this.Load += new System.EventHandler(this.Form7_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -417,5 +444,7 @@
         private System.Windows.Forms.DataGridView dgvClientes;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button button3;
     }
 }

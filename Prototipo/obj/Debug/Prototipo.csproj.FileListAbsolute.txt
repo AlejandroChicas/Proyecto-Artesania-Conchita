@@ -274,3 +274,4 @@ C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\obj\Debug\Protot
 C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\obj\Debug\Prototipo.exe.config
 C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\obj\Debug\Prototipo.Ayuda_de_Registro_de_Producto.resources
 C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\obj\Debug\Prototipo.Ayuda_de_Registro_de_Facturacion.resources
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\obj\Debug\Prototipo.Ayuda_de_Registro_de_Cliente.resources

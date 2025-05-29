@@ -260,7 +260,20 @@ namespace Prototipo
             }
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Crear un nuevo formulario de ayuda
+                Ayuda_de_Registro_de_Cliente ayudaForm = new Ayuda_de_Registro_de_Cliente();
+                ayudaForm.ShowDialog(); // Mostrar el formulario como modal
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al abrir la ayuda: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
+            }
+        }
     }
 }
 

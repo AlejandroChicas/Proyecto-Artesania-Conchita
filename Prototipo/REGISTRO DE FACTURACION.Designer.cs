@@ -32,7 +32,7 @@ namespace Prototipo
         {
             try
             {
-                Ayuda_de_Registro_de_Facturacion ayuda = new Ayuda_de_Registro_de_Factuacion();
+                Ayuda_de_Registro_de_Facturacion ayuda = new Ayuda_de_Registro_de_Facturacion();
                 ayuda.ShowDialog();
             }
             catch (Exception ex)
@@ -476,6 +476,7 @@ namespace Prototipo
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 64;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // Form6
             // 

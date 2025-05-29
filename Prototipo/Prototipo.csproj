@@ -157,6 +157,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ayuda de Registro de Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ayuda de Registro de Cliente.Designer.cs">
+      <DependentUpon>Ayuda de Registro de Cliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ayuda de Registro de Facturacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,14 +175,11 @@
     <Compile Include="Ayuda de Registro de Producto.Designer.cs">
       <DependentUpon>Ayuda de Registro de Producto.cs</DependentUpon>
     </Compile>
-    <Compile Include="AYUDA.cs">
+    <Compile Include="Ayuda de Inicio de sesion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AYUDA.Designer.cs">
-      <DependentUpon>AYUDA.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Ayuda_de_Registro_de_Factuacion.cs">
-      <SubType>Form</SubType>
+    <Compile Include="Ayuda de Inicio de sesion.Designer.cs">
+      <DependentUpon>Ayuda de Inicio de sesion.cs</DependentUpon>
     </Compile>
     <Compile Include="INICIO DE SESION.cs">
       <SubType>Form</SubType>
@@ -258,14 +261,17 @@
     <Compile Include="SQLcontrol.cs" />
     <Compile Include="SQLiteConnection.cs" />
     <Compile Include="TuDbContext.cs" />
+    <EmbeddedResource Include="Ayuda de Registro de Cliente.resx">
+      <DependentUpon>Ayuda de Registro de Cliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ayuda de Registro de Facturacion.resx">
       <DependentUpon>Ayuda de Registro de Facturacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ayuda de Registro de Producto.resx">
       <DependentUpon>Ayuda de Registro de Producto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AYUDA.resx">
-      <DependentUpon>AYUDA.cs</DependentUpon>
+    <EmbeddedResource Include="Ayuda de Inicio de sesion.resx">
+      <DependentUpon>Ayuda de Inicio de sesion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="INICIO DE SESION.resx">
       <DependentUpon>INICIO DE SESION.cs</DependentUpon>
@@ -368,6 +374,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\captura de ayuda de registro de facturacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de pantalla 2025-05-29 090210.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de pantalla 2025-05-29 101557.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
