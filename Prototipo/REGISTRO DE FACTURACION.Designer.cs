@@ -28,6 +28,20 @@ namespace Prototipo
             base.Dispose(disposing);
         }
 
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                Ayuda_de_Registro_de_Facturacion ayuda = new Ayuda_de_Registro_de_Factuacion();
+                ayuda.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al abrir la ayuda: " + ex.Message);
+            }
+        }
+
+
         #region Windows Form Designer generated code
 
         /// <summary>
@@ -73,7 +87,10 @@ namespace Prototipo
             this.label18 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -268,9 +285,9 @@ namespace Prototipo
             // button5
             // 
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(1305, 564);
+            this.button5.Location = new System.Drawing.Point(1178, 561);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(116, 43);
+            this.button5.Size = new System.Drawing.Size(116, 38);
             this.button5.TabIndex = 47;
             this.button5.Text = "Eliminar";
             this.button5.UseVisualStyleBackColor = true;
@@ -279,9 +296,9 @@ namespace Prototipo
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(1113, 564);
+            this.button4.Location = new System.Drawing.Point(974, 561);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(115, 37);
+            this.button4.Size = new System.Drawing.Size(115, 38);
             this.button4.TabIndex = 46;
             this.button4.Text = "Imprimir";
             this.button4.UseVisualStyleBackColor = true;
@@ -290,9 +307,9 @@ namespace Prototipo
             // btnNuevo
             // 
             this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevo.Location = new System.Drawing.Point(919, 564);
+            this.btnNuevo.Location = new System.Drawing.Point(781, 560);
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(101, 37);
+            this.btnNuevo.Size = new System.Drawing.Size(128, 38);
             this.btnNuevo.TabIndex = 45;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = true;
@@ -301,9 +318,9 @@ namespace Prototipo
             // btnGuardar
             // 
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(721, 560);
+            this.btnGuardar.Location = new System.Drawing.Point(582, 559);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(113, 37);
+            this.btnGuardar.Size = new System.Drawing.Size(113, 40);
             this.btnGuardar.TabIndex = 44;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
@@ -312,7 +329,7 @@ namespace Prototipo
             // btnModificar
             // 
             this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificar.Location = new System.Drawing.Point(498, 554);
+            this.btnModificar.Location = new System.Drawing.Point(341, 556);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(133, 43);
             this.btnModificar.TabIndex = 43;
@@ -439,12 +456,35 @@ namespace Prototipo
             this.label19.TabIndex = 59;
             this.label19.Text = "Precio Total:";
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(1368, 560);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(98, 41);
+            this.button1.TabIndex = 63;
+            this.button1.Text = "Ayuda";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Prototipo.Properties.Resources.Captura_de_pantalla_2025_05_09_152102;
+            this.pictureBox2.Location = new System.Drawing.Point(1472, 560);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(46, 42);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 64;
+            this.pictureBox2.TabStop = false;
+            // 
             // Form6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
             this.ClientSize = new System.Drawing.Size(1584, 640);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.textBox5);
@@ -486,6 +526,7 @@ namespace Prototipo
             this.Text = "Artesanias Conchita - Registro Fcturación";
             this.Load += new System.EventHandler(this.Form6_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -582,5 +623,7 @@ namespace Prototipo
         private object txtCantidad;
         private object txtDescripcion;
         private object txtPrecio;
+        private PictureBox pictureBox2;
+        private Button button1;
     }
 }

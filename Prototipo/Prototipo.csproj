@@ -157,6 +157,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ayuda de Registro de Facturacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ayuda de Registro de Facturacion.Designer.cs">
+      <DependentUpon>Ayuda de Registro de Facturacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ayuda de Registro de Producto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,6 +174,9 @@
     </Compile>
     <Compile Include="AYUDA.Designer.cs">
       <DependentUpon>AYUDA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ayuda_de_Registro_de_Factuacion.cs">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="INICIO DE SESION.cs">
       <SubType>Form</SubType>
@@ -249,6 +258,9 @@
     <Compile Include="SQLcontrol.cs" />
     <Compile Include="SQLiteConnection.cs" />
     <Compile Include="TuDbContext.cs" />
+    <EmbeddedResource Include="Ayuda de Registro de Facturacion.resx">
+      <DependentUpon>Ayuda de Registro de Facturacion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ayuda de Registro de Producto.resx">
       <DependentUpon>Ayuda de Registro de Producto.cs</DependentUpon>
     </EmbeddedResource>
@@ -353,6 +365,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\captura de ayuda de producto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\captura de ayuda de registro de facturacion.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

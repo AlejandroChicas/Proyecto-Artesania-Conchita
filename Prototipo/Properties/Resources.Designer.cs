@@ -83,6 +83,16 @@ namespace Prototipo.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap captura_de_ayuda_de_registro_de_facturacion {
+            get {
+                object obj = ResourceManager.GetObject("captura de ayuda de registro de facturacion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Captura_de_pantalla_2025_05_09_152102 {
             get {
                 object obj = ResourceManager.GetObject("Captura de pantalla 2025-05-09 152102", resourceCulture);
