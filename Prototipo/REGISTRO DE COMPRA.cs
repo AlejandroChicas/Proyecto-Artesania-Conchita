@@ -278,5 +278,23 @@ namespace Prototipo
         {
             MessageBox.Show("Función de impresión no implementada.");
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Crear un nuevo formulario de ayuda
+                Ayuda_de_Registro_de_Compra ayudaForm = new Ayuda_de_Registro_de_Compra();
+                ayudaForm.ShowDialog(); // Mostrar el formulario como modal
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al abrir la ayuda: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+
+
+        }
+
     }
 }

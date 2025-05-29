@@ -49,7 +49,10 @@ namespace Prototipo
             this.btnNuevo = new System.Windows.Forms.Button();
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button3 = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label10
@@ -154,7 +157,7 @@ namespace Prototipo
             // btnEditar
             // 
             this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditar.Location = new System.Drawing.Point(702, 546);
+            this.btnEditar.Location = new System.Drawing.Point(632, 548);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(132, 42);
             this.btnEditar.TabIndex = 62;
@@ -165,7 +168,7 @@ namespace Prototipo
             // btnGuardar
             // 
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(885, 546);
+            this.btnGuardar.Location = new System.Drawing.Point(815, 548);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(134, 42);
             this.btnGuardar.TabIndex = 63;
@@ -176,7 +179,7 @@ namespace Prototipo
             // btnEliminar
             // 
             this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(1074, 546);
+            this.btnEliminar.Location = new System.Drawing.Point(1004, 548);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(129, 42);
             this.btnEliminar.TabIndex = 64;
@@ -295,7 +298,7 @@ namespace Prototipo
             // btnImprimir
             // 
             this.btnImprimir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnImprimir.Location = new System.Drawing.Point(533, 546);
+            this.btnImprimir.Location = new System.Drawing.Point(463, 548);
             this.btnImprimir.Name = "btnImprimir";
             this.btnImprimir.Size = new System.Drawing.Size(121, 37);
             this.btnImprimir.TabIndex = 80;
@@ -306,7 +309,7 @@ namespace Prototipo
             // btnNuevo
             // 
             this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevo.Location = new System.Drawing.Point(1252, 544);
+            this.btnNuevo.Location = new System.Drawing.Point(1182, 546);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(108, 46);
             this.btnNuevo.TabIndex = 81;
@@ -333,12 +336,35 @@ namespace Prototipo
             this.dataGridView1.Size = new System.Drawing.Size(1208, 285);
             this.dataGridView1.TabIndex = 83;
             // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(1344, 546);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(98, 41);
+            this.button3.TabIndex = 84;
+            this.button3.Text = "Ayuda";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Prototipo.Properties.Resources.Captura_de_pantalla_2025_05_09_152102;
+            this.pictureBox2.Location = new System.Drawing.Point(1448, 546);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(46, 42);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 85;
+            this.pictureBox2.TabStop = false;
+            // 
             // Form8
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
             this.ClientSize = new System.Drawing.Size(1561, 662);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.btnImprimir);
@@ -372,6 +398,7 @@ namespace Prototipo
             this.Text = "Artesanias Conchita - Registro de Compra";
             this.Load += new System.EventHandler(this.Form8_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -500,6 +527,7 @@ namespace Prototipo
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.Splitter splitter1;
         private System.Windows.Forms.DataGridView dataGridView1;
-       
+        private PictureBox pictureBox2;
+        private Button button3;
     }
 }

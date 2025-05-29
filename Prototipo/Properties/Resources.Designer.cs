@@ -143,6 +143,16 @@ namespace Prototipo.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_pantalla_2025_05_29_111917 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de pantalla 2025-05-29 111917", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap WhatsApp_Image_2025_03_29_at_9_07_14_PM {
             get {
                 object obj = ResourceManager.GetObject("WhatsApp Image 2025-03-29 at 9.07.14 PM", resourceCulture);
