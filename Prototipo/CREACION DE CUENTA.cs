@@ -132,6 +132,22 @@ namespace Prototipo
             // Aquí puedes agregar cualquier código que quieras ejecutar cuando se cargue Form2
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Crear un nuevo formulario de ayuda
+                Ayuda_de_Creacion_de_Cuentas ayudaForm = new Ayuda_de_Creacion_de_Cuentas();
+                ayudaForm.ShowDialog(); // Mostrar el formulario como modal
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al abrir la ayuda: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+
+
+        }
     }
 }
 

@@ -186,14 +186,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Prototipo.exe" size="1747400">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Prototipo.exe" size="1852360">
       <assemblyIdentity name="Prototipo" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>I77JtwnpEMvooDv9rT8yDvys6am29hpS1zg2FKq89vk=</dsig:DigestValue>
+        <dsig:DigestValue>yPfFl3SaPuupMEGGznd1BE+/5jsS/r3gyWikbnjtxJo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

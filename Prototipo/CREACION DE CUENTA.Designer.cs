@@ -47,6 +47,9 @@ namespace Prototipo
             this.label8 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -55,7 +58,7 @@ namespace Prototipo
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(753, 121);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(338, 39);
+            this.label1.Size = new System.Drawing.Size(325, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "Creación de Cuenta";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -197,12 +200,35 @@ namespace Prototipo
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(1375, 664);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(98, 41);
+            this.button3.TabIndex = 67;
+            this.button3.Text = "Ayuda";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Prototipo.Properties.Resources.Captura_de_pantalla_2025_05_09_152102;
+            this.pictureBox2.Location = new System.Drawing.Point(1401, 616);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(46, 42);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 68;
+            this.pictureBox2.TabStop = false;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
             this.ClientSize = new System.Drawing.Size(1758, 769);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label8);
@@ -223,6 +249,7 @@ namespace Prototipo
             this.Name = "Form2";
             this.Text = "Artesanias Conchita - Creación de Cuenta";
             this.Load += new System.EventHandler(this.Form2_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -248,5 +275,7 @@ namespace Prototipo
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button button3;
     }
 }
