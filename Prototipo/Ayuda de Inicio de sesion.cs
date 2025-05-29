@@ -46,6 +46,11 @@ namespace Prototipo
         {
 
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
     internal class Principal : Form // Cambiado para heredar de Form

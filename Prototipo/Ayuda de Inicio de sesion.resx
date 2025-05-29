@@ -118,22 +118,27 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="label2.Text" xml:space="preserve">
-    <value>El sistema de Artesanías Conchita permite gestionar inventario, 
-ventas, compras, clientes y facturación de forma rápida y eficiente.
-Se accede desde un navegador usando usuario y contraseña,
- con opciones para crear cuenta o recuperar contraseña.
+    <value>                                             Sección de inicio de sesión
+Campo "Usuario":
 
-Hay dos roles en el sistema. La propietaria tiene acceso completo. 
-La empleada puede registrar ventas, ver clientes y consultar inventario.
-En inventario puedes registrar, editar y consultar productos, con alertas por stock bajo.
-En ventas puedes registrar una transacción, calcular totales y generar facturas electrónicas. 
-En clientes puedes registrar y editar información, y ver historiales de compras.
+Aquí el usuario debe ingresar su nombre de usuario o correo electrónico para identificarse.
 
-Si hay problemas, puedes recuperar tu contraseña, revisar precios y cantidades 
-ingresadas o generar las facturas en PDF si falla la impresora.
-Se recomienda hacer respaldos semanales, mantener los datos actualizados y 
-usar los reportes del sistema para tomar decisiones. La ayuda está disponible en el menú 
-principal y también desde cada módulo mediante un botón de signo de interrogación.
+Campo "Contraseña":
+
+Campo para ingresar la contraseña correspondiente al usuario.
+
+                                                        Botones
+Iniciar:
+
+Ejecuta el proceso de inicio de sesión con los datos ingresados.
+
+Crear Cuenta:
+
+Permite registrar una nueva cuenta para usuarios que no tienen una.
+
+Ayuda (con ícono de signo de interrogación):
+
+Puede abrir un formulario o ventana emergente con instrucciones o soporte técnico.
 
 </value>
   </data>

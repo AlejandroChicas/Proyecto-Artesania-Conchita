@@ -33,6 +33,7 @@ namespace Prototipo
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ayuda_de_Registro_de_Producto));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -42,9 +43,9 @@ namespace Prototipo
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Prototipo.Properties.Resources.captura_de_ayuda_de_producto;
-            this.pictureBox1.Location = new System.Drawing.Point(590, 68);
+            this.pictureBox1.Location = new System.Drawing.Point(1060, 72);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(629, 408);
+            this.pictureBox1.Size = new System.Drawing.Size(715, 412);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -53,7 +54,7 @@ namespace Prototipo
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(93, 23);
+            this.label1.Location = new System.Drawing.Point(1283, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(376, 29);
             this.label1.TabIndex = 1;
@@ -62,18 +63,19 @@ namespace Prototipo
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(25, 77);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(12, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 16);
+            this.label2.Size = new System.Drawing.Size(886, 760);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Explicacion";
+            this.label2.Text = resources.GetString("label2.Text");
             // 
             // Ayuda_de_Registro_de_Producto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
-            this.ClientSize = new System.Drawing.Size(1267, 536);
+            this.ClientSize = new System.Drawing.Size(1787, 785);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
