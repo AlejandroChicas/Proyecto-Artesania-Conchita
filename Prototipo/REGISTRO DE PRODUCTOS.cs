@@ -342,5 +342,25 @@ namespace Prototipo
         {
             PrecioTotal();
         }
+
+        private void txtnombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Ayuda_de_Registro_de_Producto ayuda = new Ayuda_de_Registro_de_Producto();
+                ayuda.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al abrir la ayuda: " + ex.Message);
+            }
+
+
+        }
     }
 }

@@ -50,7 +50,6 @@
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.btnNuevo = new System.Windows.Forms.Button();
-            this.btnGuardar = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.splitter1 = new System.Windows.Forms.Splitter();
@@ -62,6 +61,8 @@
             this.label17 = new System.Windows.Forms.Label();
             this.textTotalFinal = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.txtNombreProducto = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -216,7 +217,7 @@
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(216, 22);
             this.txtTelefono.TabIndex = 57;
-            this.txtTelefono.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
+            this.txtTelefono.TextChanged += new System.EventHandler(this.txtNombreProducto_TextChanged);
             // 
             // label5
             // 
@@ -287,17 +288,6 @@
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
-            // btnGuardar
-            // 
-            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(958, 631);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(133, 35);
-            this.btnGuardar.TabIndex = 72;
-            this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.UseVisualStyleBackColor = true;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
-            // 
             // btnBuscar
             // 
             this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -364,9 +354,9 @@
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.Location = new System.Drawing.Point(734, 89);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(87, 25);
+            this.label16.Size = new System.Drawing.Size(224, 31);
             this.label16.TabIndex = 83;
-            this.label16.Text = "Nombre";
+            this.label16.Text = "Nombre Producto";
             this.label16.Click += new System.EventHandler(this.Nombre_Click_1);
             // 
             // textPrecioTotal
@@ -407,12 +397,31 @@
             this.label18.Text = "Total Final";
             this.label18.Click += new System.EventHandler(this.TotalFinal_Click);
             // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(951, 631);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(151, 35);
+            this.button2.TabIndex = 88;
+            this.button2.Text = "Guardar";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.buttonGuardar_Click_1);
+            // 
+            // txtNombreProducto
+            // 
+            this.txtNombreProducto.Location = new System.Drawing.Point(0, 0);
+            this.txtNombreProducto.Name = "txtNombreProducto";
+            this.txtNombreProducto.Size = new System.Drawing.Size(100, 22);
+            this.txtNombreProducto.TabIndex = 89;
+            // 
             // Form9
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
             this.ClientSize = new System.Drawing.Size(1806, 745);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.textTotalFinal);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.textPrecioTotal);
@@ -423,7 +432,6 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.btnBuscar);
-            this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.txtDireccion);
             this.Controls.Add(this.label15);
@@ -446,6 +454,7 @@
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.splitter1);
+            this.Controls.Add(this.txtNombreProducto);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form9";
             this.Text = "Artesanias Conchita - Registro de venta";
@@ -479,7 +488,6 @@
       private System.Windows.Forms.TextBox txtDireccion;
       private System.Windows.Forms.Label label15;
       private System.Windows.Forms.Button btnNuevo;
-      private System.Windows.Forms.Button btnGuardar;
       private System.Windows.Forms.Button btnBuscar;
       private System.Windows.Forms.DateTimePicker dateTimePicker1;
       private System.Windows.Forms.Splitter splitter1;
@@ -491,7 +499,6 @@
       private System.Windows.Forms.Label label17;
       private System.Windows.Forms.TextBox textTotalFinal;
       private System.Windows.Forms.Label label18;
-
-
+        private System.Windows.Forms.Button button2;
     }
 }

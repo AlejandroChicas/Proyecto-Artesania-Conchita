@@ -379,32 +379,81 @@ namespace Prototipo
 
         private void txtcodigo_TextChanged(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            try
+                            {
+                // Aquí puedes agregar la lógica para manejar el evento TextChanged del txtcodigo
+                // Por ejemplo, validar el código o buscar información relacionada en la base de datos.
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al procesar el código: {ex.Message}");
+            }
         }
 
         private void txtdescripcion_TextChanged(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            try
+                            {
+                // Aquí puedes agregar la lógica para manejar el evento TextChanged del txtdescripcion
+                // Por ejemplo, validar la descripción o buscar información relacionada en la base de datos.
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al procesar la descripción: {ex.Message}");
+            }
         }
 
         private void txtnombre_TextChanged(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            try
+                            {
+                // Aquí puedes agregar la lógica para manejar el evento TextChanged del txtnombre
+                // Por ejemplo, validar el nombre o buscar información relacionada en la base de datos.
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al procesar el nombre: {ex.Message}");
+            }
         }
 
         private void txtcantidad_TextChanged(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            try
+                            {
+                // Aquí puedes agregar la lógica para manejar el evento TextChanged del txtcantidad
+                // Por ejemplo, validar la cantidad o buscar información relacionada en la base de datos.
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al procesar la cantidad: {ex.Message}");
+            }
         }
 
         private void txtpreciounitario_TextChanged(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            try
+                            {
+                // Aquí puedes agregar la lógica para manejar el evento TextChanged del txtpreciounitario
+                // Por ejemplo, validar el precio unitario o buscar información relacionada en la base de datos.
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al procesar el precio unitario: {ex.Message}");
+            }
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            try
+
+                            {
+                // Aquí puedes agregar la lógica para manejar el evento TextChanged del textBox2
+                // Por ejemplo, calcular el precio total o realizar alguna otra acción relacionada.
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al procesar el precio total: {ex.Message}");
+            }
         }
 
         private void label8_Click_1(object sender, EventArgs e)

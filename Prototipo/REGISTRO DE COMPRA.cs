@@ -24,6 +24,8 @@ namespace Prototipo
         private TextBox txtCantidad;
         private TextBox txtPrecioUnitario;
         private TextBox txtPrecioTotal;
+        private TextBox txtTotalFinal; // Update the type of txtTotalFinal from object to TextBox
+        private DateTimePicker dtpFecha; // Change the type of dtpFecha from object to DateTimePicker
 
         public Form8()
         {
@@ -31,6 +33,11 @@ namespace Prototipo
 
             string connectionString = "Server=localhost\\SQLEXPRESS;Database=prototipo;Trusted_Connection=True;";
             connection = new SqlConnection(connectionString);
+
+            // Initialize the DateTimePicker
+            dtpFecha = new DateTimePicker();
+            dtpFecha.Format = DateTimePickerFormat.Short;
+            dtpFecha.Value = DateTime.Now; // Set a default value
 
             CargarRegistros();
         }
@@ -53,51 +60,61 @@ namespace Prototipo
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+            // ✅ Cadena de conexión: asegúrate de poner la correcta según tu base de datos
+            string connectionString = "Data Source=TU_SERVIDOR;Initial Catalog=TU_BASEDATOS;Integrated Security=True";
+
+            // ✅ Validación de campos (evita errores si un TextBox es null)
+            if ((txtCodigo?.Text ?? "").Trim() == "" ||
+                (txtNombre?.Text ?? "").Trim() == "" ||
+                (txtDescripcion?.Text ?? "").Trim() == "" ||
+                (txtCantidad?.Text ?? "").Trim() == "" ||
+                (txtPrecioUnitario?.Text ?? "").Trim() == "" ||
+                (txtPrecioTotal?.Text ?? "").Trim() == "" ||
+                (txtTotalFinal?.Text ?? "").Trim() == "")
+            {
+                MessageBox.Show("Por favor complete todos los campos.");
+                return;
+            }
+
             try
             {
-                // Validar entradas antes de ejecutar la consulta
-                if (string.IsNullOrWhiteSpace(txtCodigo.Text) ||
-                    string.IsNullOrWhiteSpace(txtNombre.Text) ||
-                    string.IsNullOrWhiteSpace(txtDescripcion.Text) ||
-                    !int.TryParse(txtCantidad.Text, out int cantidad) ||
-                    !decimal.TryParse(txtPrecioUnitario.Text, out decimal precioUnitario) ||
-                    !decimal.TryParse(txtPrecioTotal.Text, out decimal precioTotal))
-
+                using (SqlConnection connection = new SqlConnection(connectionString))
                 {
-                    MessageBox.Show("Por favor, complete todos los campos correctamente.");
-                    return;
-                }
+                    string query = @"INSERT INTO RegistroVentas 
+                             (Codigo, Fecha, Nombre, Descripcion, Cantidad, PrecioUnitario, PrecioTotal, TotalFinal)
+                             VALUES (@Codigo, @Fecha, @Nombre, @Descripcion, @Cantidad, @PrecioUnitario, @PrecioTotal, @TotalFinal)";
 
-                string query = "INSERT INTO productos (Codigo, Nombre, Descripcion, Cantidad, PrecioUnitario, PrecioTotal) " +
-                               "VALUES (@Codigo, @Nombre, @Descripcion, @Cantidad, @PrecioUnitario, @PrecioTotal)";
+                    SqlCommand command = new SqlCommand(query, connection);
 
-                using (SqlCommand command = new SqlCommand(query, connection))
-                {
-                    command.Parameters.AddWithValue("@Codigo", txtCodigo.Text);
-                    command.Parameters.AddWithValue("@Nombre", txtNombre.Text);
-                    command.Parameters.AddWithValue("@Descripcion", txtDescripcion.Text);
+                    // ✅ Conversión segura de datos
+                    int codigo = int.TryParse(txtCodigo.Text, out int c) ? c : 0;
+                    decimal cantidad = decimal.TryParse(txtCantidad.Text, out decimal cant) ? cant : 0;
+                    decimal precioUnitario = decimal.TryParse(txtPrecioUnitario.Text, out decimal pu) ? pu : 0;
+                    decimal precioTotal = decimal.TryParse(txtPrecioTotal.Text, out decimal pt) ? pt : 0;
+                    decimal totalFinal = decimal.TryParse(txtTotalFinal.Text, out decimal tf) ? tf : 0;
+
+                    // ✅ Agregar parámetros a la consulta
+                    command.Parameters.AddWithValue("@Codigo", codigo);
+                    command.Parameters.AddWithValue("@Fecha", dtpFecha.Value.Date); // DateTimePicker
+                    command.Parameters.AddWithValue("@Nombre", txtNombre.Text.Trim());
+                    command.Parameters.AddWithValue("@Descripcion", txtDescripcion.Text.Trim());
                     command.Parameters.AddWithValue("@Cantidad", cantidad);
                     command.Parameters.AddWithValue("@PrecioUnitario", precioUnitario);
                     command.Parameters.AddWithValue("@PrecioTotal", precioTotal);
+                    command.Parameters.AddWithValue("@TotalFinal", totalFinal);
 
                     connection.Open();
                     command.ExecuteNonQuery();
-                    connection.Close();
 
                     MessageBox.Show("Registro guardado correctamente.");
-                    CargarRegistros();
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error al guardar: {ex.Message}");
-            }
-            finally
-            {
-                if (connection.State == ConnectionState.Open)
-                    connection.Close();
+                MessageBox.Show("Error al guardar: " + ex.Message);
             }
         }
+
 
 
         private void btnEditar_Click(object sender, EventArgs e)
@@ -143,15 +160,13 @@ namespace Prototipo
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             try
-            {
+                {
                 if (dataGridView1.SelectedRows.Count > 0)
                 {
                     int id = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["id"].Value);
-
                     string query = "DELETE FROM compra WHERE id = @Id";
                     SqlCommand command = new SqlCommand(query, connection);
                     command.Parameters.AddWithValue("@Id", id);
-
                     connection.Open();
                     command.ExecuteNonQuery();
                     MessageBox.Show("Registro eliminado correctamente.");

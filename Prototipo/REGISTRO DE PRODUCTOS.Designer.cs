@@ -22,6 +22,18 @@ namespace Prototipo
             }
             base.Dispose(disposing);
         }
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            try
+                {
+                Ayuda_de_Registro_de_Producto ayuda = new Ayuda_de_Registro_de_Producto();
+                ayuda.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al abrir la ayuda: " + ex.Message);
+            }
+        }
 
         #region Windows Form Designer generated code
 
@@ -64,9 +76,12 @@ namespace Prototipo
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.prototipoDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.prototipoDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -120,6 +135,7 @@ namespace Prototipo
             this.txtnombre.Name = "txtnombre";
             this.txtnombre.Size = new System.Drawing.Size(339, 22);
             this.txtnombre.TabIndex = 8;
+            this.txtnombre.TextChanged += new System.EventHandler(this.txtnombre_TextChanged);
             // 
             // label4
             // 
@@ -376,12 +392,35 @@ namespace Prototipo
             this.label15.TabIndex = 28;
             this.label15.Text = "Precio Total:";
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(1595, 619);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(98, 32);
+            this.button1.TabIndex = 30;
+            this.button1.Text = "Ayuda";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Prototipo.Properties.Resources.Captura_de_pantalla_2025_05_09_152102;
+            this.pictureBox2.Location = new System.Drawing.Point(1699, 619);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(46, 33);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 31;
+            this.pictureBox2.TabStop = false;
+            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
             this.ClientSize = new System.Drawing.Size(1782, 679);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.dgvProductos);
@@ -417,6 +456,7 @@ namespace Prototipo
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.prototipoDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.prototipoDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -457,5 +497,7 @@ namespace Prototipo
         private TextBox textBox1;
         private TextBox textBox2;
         private Label label15;
+        private PictureBox pictureBox2;
+        private Button button1;
     }
 }
