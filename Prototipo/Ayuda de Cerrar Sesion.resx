@@ -117,4 +117,31 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Sección de Entrada de Datos (Parte Superior):
+Aunque esta pantalla no tiene campos clásicos de entrada de datos 
+como formularios o cajas de texto, la parte superior contiene información 
+visual clave que identifica el sistema:
+
+Imagen del logotipo:
+Se observa una silueta del país de El Salvador decorada con elementos 
+culturales y naturales, junto con el texto "Artesanías Conchita".
+Propósito de esta sección: Sirve como identificador visual del sistema.
+Ayuda al usuario a reconocer que está en la plataforma correcta antes
+ de realizar alguna acción (como cerrar sesión).
+
+Botones de Acción (Parte Inferior):
+En esta parte se ubican los controles interactivos que el usuario
+puede utilizar para tomar decisiones:
+Botón "Cerrar Sesión":
+Acción principal.
+Finaliza la sesión del usuario y lo desconecta del sistema.
+Botón "Volver a la página de inicio":
+Acción secundaria.
+Permite regresar al inicio sin cerrar la sesión.
+Botón "Ayuda":
+Ofrece asistencia o guía sobre el funcionamiento de la pantalla o del sistema.
+Ícono de signo de interrogación (❓):
+Refuerza el acceso visual a la opción de ayuda.</value>
+  </data>
 </root>

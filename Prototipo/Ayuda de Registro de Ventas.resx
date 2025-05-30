@@ -117,4 +117,33 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Parte Superior: Sección de Entrada de Datos
+Esta sección está diseñada para ingresar la información necesaria al registrar 
+una venta. Incluye los siguientes campos:
+
+Campo Descripción
+Código: Identificador único del producto.
+Nombre Producto	: Nombre del artículo o producto vendido.
+Descripción: Detalles adicionales del producto.
+Fecha de Venta: Fecha en la que se realizó la transacción, seleccionable por el usuario.
+Cantidad: Número de unidades vendidas.
+Precio Unitario: Costo por unidad del producto.
+Precio Total: Resultado de multiplicar cantidad por precio unitario.
+Total Final: Puede representar el total de varios productos o aplicar descuentos/impuestos.
+Esta área se utiliza antes de guardar o modificar una venta, asegurando que 
+todos los datos requeridos estén completos.
+Parte Inferior: Botones de Acción
+Esta sección contiene los botones que permiten interactuar con los datos ingresados o mostrados:
+
+Botón Función
+
+Modificar: Permite actualizar un registro existente seleccionado en la tabla.
+Nuevo: Limpia todos los campos del formulario para ingresar una nueva venta.
+Guardar: Registra la venta actual en la base de datos.
+Buscar: Realiza una búsqueda de ventas específicas según algún criterio (ej. código).
+Eliminar: Borra el registro seleccionado.
+Ayuda: Proporciona asistencia o abre un manual de usuario.
+❓ Icono	Refuerzo visual del botón de ayuda, útil para acceso rápido.</value>
+  </data>
 </root>

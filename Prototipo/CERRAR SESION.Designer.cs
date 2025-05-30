@@ -188,7 +188,7 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(1583, 614);
+            this.button3.Location = new System.Drawing.Point(1024, 529);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(98, 41);
             this.button3.TabIndex = 67;
@@ -199,7 +199,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Prototipo.Properties.Resources.Captura_de_pantalla_2025_05_09_152102;
-            this.pictureBox2.Location = new System.Drawing.Point(1608, 661);
+            this.pictureBox2.Location = new System.Drawing.Point(1049, 576);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(46, 42);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

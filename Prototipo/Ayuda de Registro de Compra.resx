@@ -117,4 +117,31 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Parte Superior: Sección de Entrada de Datos
+Esta área permite al usuario ingresar todos los datos necesarios 
+para registrar una compra de productos. Los campos disponibles son:
+
+Campo Función
+Código: Identificador único del producto a registrar.
+Nombre: Nombre del producto comprado.
+Descripción:Detalles adicionales sobre el producto (modelo, color, etc.).
+Cantidad: Número de unidades adquiridas.
+Precio Unitario: Costo por unidad del producto.
+Precio Total: Resultado de multiplicar cantidad por precio unitario.
+Estos datos permiten llevar un registro organizado y detallado de 
+cada compra realizada.
+
+Parte Inferior: Botones de Acción
+BotónFunción
+Imprimir: Permite generar e imprimir un comprobante o reporte de compra.
+Editar: Habilita la modificación de un registro seleccionado.
+Guardar: Almacena los datos ingresados en los campos superiores 
+como una nueva compra.
+Eliminar: Borra una compra previamente seleccionada del sistema.
+Nuevo: Limpia todos los campos para ingresar una nueva compra.
+
+Estos botones brindan control total al usuario para gestionar 
+el ciclo completo de compras dentro del sistema.</value>
+  </data>
 </root>

@@ -117,4 +117,34 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Sección de Entrada de Datos (Parte Superior)
+Los campos están organizados para permitir al usuario ingresar la información del cliente:
+Nombre completo: Nombre del cliente.
+Dirección: Ubicación física o domicilio del cliente.
+Fecha: Seleccionada por un control de calendario desplegable.
+Departamento: Lugar donde vive el cliente.
+Teléfono: Número de contacto del cliente.
+DUI: Documento Único de Identidad.
+
+Tabla de Registros de Clientes (Parte Central)
+Presenta los datos ya registrados en una tabla con las siguientes columnas:
+Nombre: Nombre del cliente.
+Dirección: Lugar de residencia.
+DUI: Número de identidad.
+Fecha: Fecha en que fue registrado.
+Departamento: Departamento al que pertenece (todos en la tabla son de USULUTÁN).
+Teléfono: Número telefónico.
+Esta tabla permite seleccionar registros para editarlos, eliminarlos o buscarlos.
+
+Botones de Funcionalidad (Parte Inferior)
+Permiten manipular los registros:
+
+Modificar: Cambia la información de un cliente ya registrado.
+Nuevo: Limpia los campos para ingresar un nuevo cliente.
+Buscar: Permite localizar un registro específico (probablemente por DUI o nombre).
+Guardar: Graba la información ingresada o modificada.
+Eliminar: Borra el cliente seleccionado de la base de datos.
+Ayuda: Proporciona asistencia o instrucciones al usuario.</value>
+  </data>
 </root>
