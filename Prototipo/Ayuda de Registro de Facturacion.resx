@@ -117,4 +117,41 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Sección de Entrada de Datos (Parte Superior)
+
+En esta parte se ingresan los datos de la factura:
+Fecha: Seleccionada mediante un menú desplegable (en este caso: jueves, 29 de mayo).
+NIT / DUI: Campo para ingresar el documento de identificación fiscal del cliente.
+Nombre del Cliente: Campo para ingresar el nombre del comprador.
+Dirección: Domicilio del cliente.
+Cuenta de: Medio de pago o cuenta relacionada (Ej. efectivo, tarjeta).
+Cantidad: Número de productos vendidos.
+Descripción: Nombre o tipo del producto (ej. "CAMISA").
+Precio: Precio unitario del producto.
+Precio Total: Puede referirse al subtotal por ítem (Cantidad × Precio).
+Total Final: Monto total de toda la factura (posiblemente con impuestos o varios ítems).
+
+Tabla de Registros (Centro)
+Aquí se visualizan los registros previamente ingresados, con las siguientes columnas:
+Id: Identificador único del registro.
+Fecha: Fecha de emisión (Ej. 19/05/2025).
+NIT_DUI: Documento del cliente (Ej. 02843957-9).
+NombreCliente: Nombre del comprador (Ej. ALEJANDRO).
+Direccion: Ubicación del cliente (Ej. SANTA MARIA).
+Cuenta: Medio de pago (Ej. EFECTIVO).
+Cantidad: Número de artículos comprados (Ej. 5).
+Descripcion: Tipo de producto (Ej. CAMISA).
+Precio: Precio unitario (Ej. 2.00).
+Botones de Acción (Parte Inferior)
+
+Permiten al usuario interactuar con el sistema:
+Modificar: Editar un registro existente.
+Guardar: Registrar o actualizar la información ingresada.
+Nuevo: Limpiar los campos para crear un nuevo registro.
+Imprimir: Imprimir la factura o resumen.
+Eliminar: Borrar un registro seleccionado.
+Ayuda: Mostrar ayuda o instrucciones de uso.
+</value>
+  </data>
 </root>

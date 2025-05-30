@@ -578,6 +578,17 @@ namespace Prototipo
         }
 
 
+        private void OnLoad(object sender, EventArgs e)
+        {
+            try
+            {
+                // Aquí puedes agregar cualquier lógica que necesites al cargar el formulario
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar la ayuda: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
 
 
 
