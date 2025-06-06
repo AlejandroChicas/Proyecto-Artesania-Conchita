@@ -7,23 +7,17 @@ namespace Prototipo
 {
     public partial class Inventario : Form
     {
-        private SqlConnection connection;
+        private SqlConnection conexion = new SqlConnection("Server=localhost\\SQLEXPRESS;Database=Prototipo;Trusted_Connection=True;");
 
         public Inventario()
         {
             InitializeComponent();
 
-            // Configuración de la conexión
-            string connectionString = "Server=localhost\\SQLEXPRESS;Database=prototipo;Trusted_Connection=True;";
-            connection = new SqlConnection(connectionString);
+            // Inicializar filtros
+            cboFiltros.Items.AddRange(new string[] { "Todos", "Categoría", "Estado" });
+            cboFiltros.SelectedIndex = 0;
 
-            // Llenar el combobox de filtros
-            cboFiltros.Items.Add("Todos");
-            cboFiltros.Items.Add("Categoría");
-            cboFiltros.Items.Add("Estado");
-            cboFiltros.SelectedIndex = 0; // Seleccionar el primer filtro por defecto
-
-            // Cargar el inventario al iniciar
+            // Cargar el inventario completo
             CargarInventario();
         }
 
@@ -31,106 +25,111 @@ namespace Prototipo
         {
             try
             {
-                string query = "SELECT * FROM inventario";
+                conexion.Open();
 
-                // Si se aplica un filtro y una búsqueda
+                string query = "SELECT * FROM inventario";
+                SqlCommand comando;
+
                 if (!string.IsNullOrEmpty(filtro) && !string.IsNullOrEmpty(busqueda))
                 {
                     query += $" WHERE {filtro} LIKE @Busqueda";
+                    comando = new SqlCommand(query, conexion);
+                    comando.Parameters.AddWithValue("@Busqueda", $"%{busqueda}%");
                 }
-
-                SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
-                if (!string.IsNullOrEmpty(filtro) && !string.IsNullOrEmpty(busqueda))
+                else
                 {
-                    adapter.SelectCommand.Parameters.AddWithValue("@Busqueda", $"%{busqueda}%");
+                    comando = new SqlCommand(query, conexion);
                 }
 
-                DataTable table = new DataTable();
-                adapter.Fill(table);
+                SqlDataAdapter adapter = new SqlDataAdapter(comando);
+                DataTable tabla = new DataTable();
+                adapter.Fill(tabla);
 
-                // Mostrar los datos en el DataGridView
-                dgvInventario.DataSource = table;
+                dgvInventario.DataSource = tabla;
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error al cargar el inventario: {ex.Message}");
+                MessageBox.Show("Error al cargar el inventario: " + ex.Message);
             }
-
+            finally
+            {
+                conexion.Close();
+            }
         }
-
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             string filtro = "";
-            if (cboFiltros.SelectedItem.ToString() == "Categoría")
-            {
-                filtro = "categoria";
-            }
-            else if (cboFiltros.SelectedItem.ToString() == "Estado")
-            {
-                filtro = "estado";
-            }
+            string seleccion = cboFiltros.SelectedItem.ToString();
 
-            CargarInventario(filtro, txtBusqueda.Text);
+            if (seleccion == "Categoría")
+                filtro = "categoria";
+            else if (seleccion == "Estado")
+                filtro = "estado";
+
+            if (seleccion == "Todos")
+                CargarInventario();
+            else
+                CargarInventario(filtro, txtBusqueda.Text.Trim());
         }
 
         private void label14_Click(object sender, EventArgs e)
         {
-            Form inicio = new Form4();
-            inicio.Show();
+            new Form4().Show();
             this.Hide();
         }
 
         private void label13_Click(object sender, EventArgs e)
         {
-            Form registrodeproducto = new Form5();
-            registrodeproducto.Show();
+            new Form5().Show();
             this.Hide();
         }
 
         private void label12_Click(object sender, EventArgs e)
         {
-            Form registrodefacturacion = new Form6();
-            registrodefacturacion.Show();
+            new Form6().Show();
             this.Hide();
         }
 
         private void label11_Click(object sender, EventArgs e)
         {
-            Form registrodecliente = new Form7();
-            registrodecliente.Show();
+            new Form7().Show();
             this.Hide();
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
-            Form registrodecompra = new Form8();
-            registrodecompra.Show();
+            new Form8().Show();
             this.Hide();
         }
 
         private void label8_Click(object sender, EventArgs e)
         {
-            Form registrodeventa = new Form9();
-            registrodeventa.Show();
+            new Form9().Show();
             this.Hide();
         }
 
         private void label10_Click(object sender, EventArgs e)
         {
-            Form cerrarsesion = new Form11();
-            cerrarsesion.Show();
+            new Form11().Show();
             this.Hide();
         }
 
         private void Form10_Load(object sender, EventArgs e)
         {
-            // Optionally, you can load the inventory here too if needed
+            // Si deseas recargar el inventario al abrir, puedes llamarlo aquí
+            // CargarInventario();
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
+            // Aquí puedes colocar la lógica para agregar productos si es necesario
+        }
 
+        private void label9_Click(object sender, EventArgs e)
+        {
+            // Código opcional si necesitas funcionalidad en este label
         }
     }
 }
+

@@ -42,11 +42,12 @@ namespace Prototipo
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(621, 9);
+            this.label1.Location = new System.Drawing.Point(764, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(290, 29);
             this.label1.TabIndex = 1;
             this.label1.Text = "Ayuda de Cerrar Sesion";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -61,9 +62,9 @@ namespace Prototipo
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Prototipo.Properties.Resources.Captura_de_pantalla_2025_05_29_115524;
-            this.pictureBox1.Location = new System.Drawing.Point(1081, 73);
+            this.pictureBox1.Location = new System.Drawing.Point(999, 73);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(691, 600);
+            this.pictureBox1.Size = new System.Drawing.Size(786, 600);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;

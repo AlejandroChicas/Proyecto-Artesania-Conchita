@@ -1,49 +1,56 @@
-﻿using MySql.Data.MySqlClient;
-using System;
-using System.Windows.Forms;
-using System.Data.SqlClient;
-using System.Configuration;
-using Org.BouncyCastle.Cms;
-using System.Diagnostics.Eventing.Reader;
+﻿using System;
 using System.Data;
-
+using System.Data.SqlClient;
+using System.Windows.Forms;
 
 namespace Prototipo
 {
     public partial class Form1 : Form
     {
-        SQLcontrol sQLcontrol = new SQLcontrol();
+        SqlConnection conexion = new SqlConnection("Server=localhost\\SQLEXPRESS;Database=Prototipo;Trusted_Connection=True;");
 
         public Form1()
         {
             InitializeComponent();
         }
 
-        SqlConnection conexion = new SqlConnection("Server=localhost\\SQLEXPRESS;Database=prototipo;Trusted_Connection=True;");
-
-
-
         private void Form1_Load(object sender, EventArgs e)
         {
-
-
+            // Inicialización si es necesaria
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
+            try
+            {
+                conexion.Open();
+                string consulta = "SELECT COUNT(*) FROM usuarios WHERE usuario = @usuario AND pass = @pass";
+                SqlCommand comando = new SqlCommand(consulta, conexion);
+                comando.Parameters.AddWithValue("@usuario", txtusuario.Text);
+                comando.Parameters.AddWithValue("@pass", txtcontraseña.Text);
 
+                int count = Convert.ToInt32(comando.ExecuteScalar());
 
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-
+                if (count > 0)
+                {
+                    MessageBox.Show("Bienvenido");
+                    Form inicio = new Form4();
+                    inicio.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Usuario o contraseña incorrectos");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al conectar con la base de datos: " + ex.Message);
+            }
+            finally
+            {
+                conexion.Close();
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -51,61 +58,22 @@ namespace Prototipo
             Form formulario = new Form2();
             formulario.Show();
             this.Hide();
-
-        }
-
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            conexion.Open();
-            string consulta = "select * from usuarios where usuario='" + txtusuario.Text + "' and pass='" + txtcontraseña.Text + "'";
-            SqlCommand comando = new SqlCommand(consulta, conexion);
-            SqlDataReader lector;
-            lector = comando.ExecuteReader();
-
-            if (lector.HasRows == true)
-            {
-                MessageBox.Show("Bienvenido");
-                Form inicio = new Form4();
-                inicio.Show();
-
-                this.Hide();
-            }
-            else
-            {
-                MessageBox.Show("Usuario o contraseña incorrectos");
-            }
-            conexion.Close();
-
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BtnAyuda_Click(object sender, EventArgs e)
-        {
-            this.Hide(); // Opcional: oculta el formulario actual
-            Ayuda ayuda = new Ayuda(this); // Le pasas el formulario actual
-            ayuda.Show(); // Puedes usar ShowDialog() si prefieres que sea modal
         }
 
         private void btnAyuda_Click(object sender, EventArgs e)
         {
             Ayuda ayudaForm = new Ayuda(this); // Pasamos la instancia actual
-            this.Hide();
             ayudaForm.Show();
+            this.Hide();
         }
+
+        // Puedes eliminar estos si no los estás usando
+        private void pictureBox1_Click(object sender, EventArgs e) { }
+        private void label2_Click(object sender, EventArgs e) { }
+        private void textBox2_TextChanged(object sender, EventArgs e) { }
+        private void textBox1_TextChanged(object sender, EventArgs e) { }
+        private void label3_Click(object sender, EventArgs e) { }
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) { }
     }
 }
+

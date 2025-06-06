@@ -118,43 +118,29 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="label2.Text" xml:space="preserve">
-    <value>                                          Sección de ingreso de datos (lado izquierdo)
+    <value>Sección de ingreso de datos (lado izquierdo)
 Contiene campos para registrar o editar un producto:
-
 Código: Identificador único del producto (ej. 0001, 0002...).
-
 Nombre: Nombre del producto o de la persona relacionada con él (como el artesano).
-
 Descripción: Breve detalle del producto, como "camisa", "collar", etc.
-
 Cantidad: Número de unidades disponibles del producto.
-
 Precio unitario: Costo individual de cada unidad del producto.
+Precio total: Se calcula automáticamente multiplicando cantidad por precio unitario.
 
-Precio total: Se calcula automáticamente multiplicando cantidad × precio unitario.
-
-                                             Botones de acción (parte inferior izquierda)
+Botones de acción (parte inferior izquierda)
 Editar: Permite modificar un producto seleccionado de la tabla.
-
 Guardar: Guarda un nuevo producto o una edición.
-
 Nuevo: Limpia los campos para ingresar un nuevo producto.
-
 Imprimir: Probablemente genera un reporte o ficha del producto.
-
 Eliminar: Borra un producto seleccionado de la lista.
-
-Ayuda Botón con ícono de signo de interrogación que puede abrir una sección de ayuda o instrucciones.
-
+Ayuda Botón con ícono de signo de interrogación que puede abrir una 
+sección de ayuda o instrucciones.
 Funcionalidad esperada
+
 Este formulario permite:
-
 Añadir nuevos productos.
-
 Ver un listado en tiempo real.
-
 Modificar o eliminar registros.
-
 Imprimir información de productos.</value>
   </data>
 </root>

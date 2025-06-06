@@ -41,9 +41,9 @@ namespace Prototipo
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Prototipo.Properties.Resources.Captura_de_pantalla_2025_05_29_111917;
-            this.pictureBox1.Location = new System.Drawing.Point(868, 120);
+            this.pictureBox1.Location = new System.Drawing.Point(859, 82);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(923, 550);
+            this.pictureBox1.Size = new System.Drawing.Size(923, 625);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -61,10 +61,10 @@ namespace Prototipo
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(77, 120);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(66, 82);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(669, 550);
+            this.label2.Size = new System.Drawing.Size(719, 625);
             this.label2.TabIndex = 2;
             this.label2.Text = resources.GetString("label2.Text");
             // 

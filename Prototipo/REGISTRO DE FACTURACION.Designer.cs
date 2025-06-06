@@ -538,7 +538,7 @@ namespace Prototipo
         {
             try
             {
-                using (SqlConnection conexión = new SqlConnection("Server=localhost\\SQLEXPRESS;Database=prototipo;Trusted_Connection=True;"))
+                using (SqlConnection conexión = new SqlConnection("Server=localhost\\SQLEXPRESS;Database=Prototipo;Trusted_Connection=True;"))
                 {
                     conexión.Open();
 

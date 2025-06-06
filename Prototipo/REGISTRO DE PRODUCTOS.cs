@@ -8,7 +8,7 @@ namespace Prototipo
     public partial class Form5 : Form
     {
         // Cadena de conexión a la base de datos
-        private string connectionString = "Server=localhost\\SQLEXPRESS;Database=prototipo;Trusted_Connection=True;";
+        private string connectionString = "Server=localhost\\SQLEXPRESS;Database=Prototipo;Trusted_Connection=True;";
 
         public Form5()
         {
@@ -367,5 +367,11 @@ namespace Prototipo
         {
 
         }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
+

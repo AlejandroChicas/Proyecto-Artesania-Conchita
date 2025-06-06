@@ -8,6 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using System.IO;
 
 namespace Prototipo
 {
@@ -15,7 +18,7 @@ namespace Prototipo
     {
 
         // Cadena de conexión a la base de datos
-        private string connectionString = "Server=localhost\\SQLEXPRESS;Database=prototipo;Trusted_Connection=True;";
+        private string connectionString = "Server=localhost\\SQLEXPRESS;Database=Prototipo;Trusted_Connection=True;";
         private object totalFinal;
 
         public Form6()
@@ -30,7 +33,7 @@ namespace Prototipo
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();
-                SqlDataAdapter adapter = new SqlDataAdapter("SELECT * FROM facturacion", connection);
+                SqlDataAdapter adapter = new SqlDataAdapter("SELECT * FROM Facturacion", connection);
                 DataTable table = new DataTable();
                 adapter.Fill(table);
                 dataGridView1.DataSource = table;
@@ -78,6 +81,8 @@ namespace Prototipo
             }
         }
 
+
+
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             if (dataGridView1.SelectedRows.Count > 0)
@@ -99,6 +104,8 @@ namespace Prototipo
             }
         }
 
+
+
         private void LimpiarCampos()
         {
             txtNitDui.Clear();
@@ -110,10 +117,111 @@ namespace Prototipo
             textBox1.Clear();
             textBox5.Clear();
         }
-
         private void btnImprimir_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Función de impresión no implementada.");
+            try
+            {
+                if (dataGridView1.Rows.Count == 0)
+                {
+                    MessageBox.Show("No hay datos para imprimir.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                string rutaArchivo = @"C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Facturacion" + DateTime.Now.ToString("yyyyMMdd_HHmmss") + ".pdf";
+                Document doc = new Document(PageSize.A4.Rotate(), 25, 25, 30, 30);
+                PdfWriter.GetInstance(doc, new FileStream(rutaArchivo, FileMode.Create));
+                doc.Open();
+
+                // Agregar logo 
+                string rutaLogo = @"C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\Resources\WhatsApp Image 2025-03-29 at 9.07.14 PM.jpeg";
+                PdfPTable encabezado = new PdfPTable(2);
+                encabezado.WidthPercentage = 100;
+                float[] anchoCols = { 80f, 20f };
+                encabezado.SetWidths(anchoCols);
+
+                // Título
+                Paragraph titulo = new Paragraph("Facturacion - Artesanías Conchita", FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 18));
+                PdfPCell celdaTitulo = new PdfPCell(titulo)
+                {
+                    Border = iTextSharp.text.Rectangle.NO_BORDER,
+                    HorizontalAlignment = Element.ALIGN_LEFT,
+                    VerticalAlignment = Element.ALIGN_MIDDLE
+                };
+                encabezado.AddCell(celdaTitulo);
+
+                // Logo (para saber si el logo existe)
+                if (File.Exists(rutaLogo))
+                {
+                    iTextSharp.text.Image logo = iTextSharp.text.Image.GetInstance(rutaLogo);
+                    logo.ScaleAbsolute(100, 50);
+                    PdfPCell celdaLogo = new PdfPCell(logo)
+                    {
+                        Border = iTextSharp.text.Rectangle.NO_BORDER,
+                        HorizontalAlignment = Element.ALIGN_RIGHT
+                    };
+                    encabezado.AddCell(celdaLogo);
+                }
+                else
+                {
+                    encabezado.AddCell(new PdfPCell(new Phrase("")) { Border = iTextSharp.text.Rectangle.NO_BORDER });
+                }
+
+                doc.Add(encabezado);
+                doc.Add(new Paragraph("Fecha: " + DateTime.Now.ToShortDateString()));
+                doc.Add(new Paragraph("Cliente:"));
+                doc.Add(new Paragraph("NIT / DUI:"));
+                doc.Add(new Paragraph("Dirección:"));
+                doc.Add(new Paragraph("Cuenta:"));
+                doc.Add(new Paragraph(" "));
+
+                // Crear tabla
+                PdfPTable tabla = new PdfPTable(10);
+                tabla.WidthPercentage = 100;
+                string[] columnas = { "Fecha", "NIT/DUI", "Nombre Cliente", "Dirección", "Cuenta", "Cantidad", "Descripción", "Precio", "Precio Total", "Total Final" };
+                foreach (string columna in columnas)
+                {
+                    PdfPCell celda = new PdfPCell(new Phrase(columna))
+                    {
+                        BackgroundColor = BaseColor.LIGHT_GRAY
+                    };
+                    tabla.AddCell(celda);
+                }
+
+                // Agregar datos
+                foreach (DataGridViewRow fila in dataGridView1.Rows)
+                {
+                    if (!fila.IsNewRow)
+                    {
+                        tabla.AddCell(Convert.ToDateTime(fila.Cells["Fecha"].Value).ToShortDateString());
+                        tabla.AddCell(fila.Cells["NIT_DUI"].Value?.ToString());
+                        tabla.AddCell(fila.Cells["NombreCliente"].Value?.ToString());
+                        tabla.AddCell(fila.Cells["Direccion"].Value?.ToString());
+                        tabla.AddCell(fila.Cells["Cuenta"].Value?.ToString());
+                        tabla.AddCell(fila.Cells["Cantidad"].Value?.ToString());
+                        tabla.AddCell(fila.Cells["Descripcion"].Value?.ToString());
+                        tabla.AddCell(fila.Cells["Precio"].Value?.ToString());
+                        tabla.AddCell(fila.Cells["PrecioTotal"].Value?.ToString());
+                        tabla.AddCell(fila.Cells["TotalFinal"].Value?.ToString());
+                    }
+                }
+
+                doc.Add(tabla);
+                doc.Add(new Paragraph(" "));
+
+                // Mensaje de agradecimiento
+                Paragraph agradecimiento = new Paragraph("Gracias por su compra", FontFactory.GetFont(FontFactory.HELVETICA_OBLIQUE, 12));
+                agradecimiento.Alignment = Element.ALIGN_LEFT;
+                doc.Add(agradecimiento);
+
+                doc.Close();
+
+                MessageBox.Show("PDF generado con éxito en:\n" + rutaArchivo, "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                System.Diagnostics.Process.Start(rutaArchivo);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al generar el PDF: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
 
@@ -278,8 +386,8 @@ namespace Prototipo
 
         private void button1_Click(object sender, EventArgs e)
         {
-           try
-                {
+            try
+            {
                 // Crear un nuevo formulario de ayuda
                 Ayuda_de_Registro_de_Facturacion ayudaForm = new Ayuda_de_Registro_de_Facturacion();
                 ayudaForm.ShowDialog(); // Mostrar el formulario como modal
@@ -294,6 +402,11 @@ namespace Prototipo
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
         {
 
         }

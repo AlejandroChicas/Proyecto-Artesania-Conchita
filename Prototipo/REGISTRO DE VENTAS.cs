@@ -15,7 +15,7 @@ namespace Prototipo
     {
 
         // Cadena de conexión a la base de datos
-        private string connectionString = "Server=localhost\\SQLEXPRESS;Database=prototipo;Trusted_Connection=True;";
+        private string connectionString = "Server=localhost\\SQLEXPRESS;Database=Prototipo;Trusted_Connection=True;";
         private TextBox txtCódigo;
         private TextBox txtDescripción;
         private TextBox txtCantidad;
@@ -25,7 +25,7 @@ namespace Prototipo
         private DateTimePicker dtpFecha;
         private TextBox txtNombreProducto;
 
-        
+
         public Form9()
         {
             InitializeComponent();
@@ -41,14 +41,14 @@ namespace Prototipo
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();
-                SqlDataAdapter adapter = new SqlDataAdapter("SELECT * FROM ventas", connection);
+                SqlDataAdapter adapter = new SqlDataAdapter("SELECT * FROM RegistroVentas", connection);
                 DataTable table = new DataTable();
                 adapter.Fill(table);
                 dataGridView1.DataSource = table;
             }
         }
 
-        
+
 
 
         private void btnNuevo_Click(object sender, EventArgs e)

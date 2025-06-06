@@ -1,33 +1,33 @@
 ﻿namespace Prototipo
 {
     partial class Form9
-{
-    /// <summary>
-    /// Required designer variable.
-    /// </summary>
-    private System.ComponentModel.IContainer components = null;
-
-    /// <summary>
-    /// Clean up any resources being used.
-    /// </summary>
-    /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-    protected override void Dispose(bool disposing)
     {
-        if (disposing && (components != null))
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
         {
-            components.Dispose();
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
         }
-        base.Dispose(disposing);
-    }
 
-    #region Windows Form Designer generated code
+        #region Windows Form Designer generated code
 
-    /// <summary>
-    /// Required method for Designer support - do not modify
-    /// the contents of this method with the code editor.
-    /// </summary>
-    private void InitializeComponent()
-    {
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form9));
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -490,42 +490,42 @@
             this.ResumeLayout(false);
             this.PerformLayout();
 
-    }
+        }
 
-    #endregion
+        #endregion
 
-      private System.Windows.Forms.Label label10;
-      private System.Windows.Forms.Label label9;
-      private System.Windows.Forms.Label label8;
-      private System.Windows.Forms.Label label1;
-      private System.Windows.Forms.Label label11;
-      private System.Windows.Forms.Label label12;
-      private System.Windows.Forms.Label label13;
-      private System.Windows.Forms.Label label14;
-      private System.Windows.Forms.Label label2;
-      private System.Windows.Forms.Label label3;
-      private System.Windows.Forms.TextBox txtCodigo;
-      private System.Windows.Forms.TextBox txtDescripcion;
-      private System.Windows.Forms.Label label4;
-      private System.Windows.Forms.TextBox txtTelefono;
-      private System.Windows.Forms.Label label5;
-      private System.Windows.Forms.TextBox txtCorreoElectronico;
-      private System.Windows.Forms.Label label6;
-      private System.Windows.Forms.Label label7;
-      private System.Windows.Forms.TextBox txtDireccion;
-      private System.Windows.Forms.Label label15;
-      private System.Windows.Forms.Button btnNuevo;
-      private System.Windows.Forms.Button btnBuscar;
-      private System.Windows.Forms.DateTimePicker dateTimePicker1;
-      private System.Windows.Forms.Splitter splitter1;
-      private System.Windows.Forms.DataGridView dataGridView1;
-      private System.Windows.Forms.Button button5;
-      private System.Windows.Forms.Button button1;
-      private System.Windows.Forms.Label label16;
-      private System.Windows.Forms.TextBox textPrecioTotal;
-      private System.Windows.Forms.Label label17;
-      private System.Windows.Forms.TextBox textTotalFinal;
-      private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtCodigo;
+        private System.Windows.Forms.TextBox txtDescripcion;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtTelefono;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtCorreoElectronico;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtDireccion;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Button btnNuevo;
+        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Splitter splitter1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox textPrecioTotal;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox textTotalFinal;
+        private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button3;

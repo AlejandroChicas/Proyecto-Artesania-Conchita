@@ -41,7 +41,7 @@ namespace Prototipo
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Prototipo.Properties.Resources.captura_de_ayuda_de_registro_de_facturacion;
-            this.pictureBox1.Location = new System.Drawing.Point(894, 62);
+            this.pictureBox1.Location = new System.Drawing.Point(944, 62);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(839, 605);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

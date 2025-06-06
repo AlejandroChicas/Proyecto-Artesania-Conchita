@@ -211,3 +211,4 @@ namespace Prototipo
         private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
+

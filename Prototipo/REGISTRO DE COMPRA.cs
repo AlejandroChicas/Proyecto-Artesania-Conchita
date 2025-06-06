@@ -61,7 +61,7 @@ namespace Prototipo
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             // ✅ Cadena de conexión: asegúrate de poner la correcta según tu base de datos
-            string connectionString = "Data Source=TU_SERVIDOR;Initial Catalog=TU_BASEDATOS;Integrated Security=True";
+            string connectionString = "Data Source=JOSUE;Initial Catalog=Prtotipo;Integrated Security=True";
 
             // ✅ Validación de campos (evita errores si un TextBox es null)
             if ((txtCodigo?.Text ?? "").Trim() == "" ||
@@ -160,7 +160,7 @@ namespace Prototipo
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             try
-                {
+            {
                 if (dataGridView1.SelectedRows.Count > 0)
                 {
                     int id = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["id"].Value);
@@ -296,5 +296,10 @@ namespace Prototipo
 
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
+

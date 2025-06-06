@@ -118,30 +118,21 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="label2.Text" xml:space="preserve">
-    <value>                                                        Campos del formulario
-Nombre de Usuario: Campo donde el usuario ingresa el nombre con el que desea registrarse en el sistema.
-
+    <value>Campos del formulario
+Nombre de Usuario: Campo donde el usuario ingresa el nombre con el
+ que desea registrarse en el sistema.
 Correo Electrónico: Se usa para contacto o recuperación de cuenta.
-
 Contraseña: Clave que el usuario utilizará para iniciar sesión posteriormente.
-
 Confirmar Contraseña: Sirve para asegurarse de que el usuario escribió correctamente su contraseña.
-
 Teléfono: Dato de contacto, posiblemente para soporte o verificación.
-
 Rol o Cargo: Define el rol del usuario dentro del sistema, por ejemplo: administrador, empleado, etc.
 
-                                                                   Botones 
+Botones 
 Iniciar: Lleva de vuelta a la pantalla de inicio de sesión si el usuario ya tiene cuenta.
-
 Confirmar: Guarda los datos ingresados y crea la cuenta.
-
 Ayuda (con ícono): Botón para abrir una sección de soporte o instrucciones.
-
 Llena todos los campos requeridos.
-
 Presiona "Confirmar" para crear su cuenta.
-
 Si ya tenía cuenta, puede presionar "Iniciar" para volver a la pantalla de login.
 </value>
   </data>
