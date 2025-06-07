@@ -254,6 +254,12 @@
     <Compile Include="Ayuda de Creacion de Cuentas.Designer.cs">
       <DependentUpon>Ayuda de Creacion de Cuentas.cs</DependentUpon>
     </Compile>
+    <Compile Include="AYUDA DE INVENTARIO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AYUDA DE INVENTARIO.Designer.cs">
+      <DependentUpon>AYUDA DE INVENTARIO.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ayuda de Registro de Cliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -379,6 +385,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Ayuda de Creacion de Cuentas.resx">
       <DependentUpon>Ayuda de Creacion de Cuentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AYUDA DE INVENTARIO.resx">
+      <DependentUpon>AYUDA DE INVENTARIO.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ayuda de Registro de Cliente.resx">
       <DependentUpon>Ayuda de Registro de Cliente.cs</DependentUpon>
@@ -517,6 +526,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Captura de pantalla 2025-05-29 115524.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de pantalla 2025-06-07 104747.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

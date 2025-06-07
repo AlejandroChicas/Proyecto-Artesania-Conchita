@@ -352,3 +352,4 @@ C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\obj\Debug\Protot
 C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\obj\Debug\Prototipo.exe.config
 C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\itextsharp.dll
 C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\itextsharp.xml
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\obj\Debug\Prototipo.AYUDA_DE_INVENTARIO.resources

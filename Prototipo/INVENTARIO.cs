@@ -130,6 +130,22 @@ namespace Prototipo
         {
             // Código opcional si necesitas funcionalidad en este label
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Crear un nuevo formulario de ayuda
+                AYUDA_DE_INVENTARIO ayudaForm = new AYUDA_DE_INVENTARIO();
+                ayudaForm.ShowDialog(); // Mostrar el formulario como modal
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al abrir la ayuda: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+
+        }
     }
 }
 
