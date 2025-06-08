@@ -39,79 +39,99 @@ namespace Prototipo
             dtpFecha.Format = DateTimePickerFormat.Short;
             dtpFecha.Value = DateTime.Now; // Set a default value
 
-            CargarRegistros();
+            CargarDatos();
         }
-
-        private void CargarRegistros()
+        private void CargarDatos()
         {
             try
             {
-                string query = "SELECT * FROM compra";
-                SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
-                DataTable table = new DataTable();
-                adapter.Fill(table);
-                dataGridView1.DataSource = table;
+                using (SqlConnection connection = new SqlConnection("Server=localhost\\SQLEXPRESS;Database=Prototipo;Trusted_Connection=True;"))
+                {
+                    string query = "SELECT id, Codigo, Nombre, Descripcion, Cantidad, PrecioUnitario, PrecioTotal FROM productos";
+                    SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
+                    DataTable table = new DataTable();
+                    adapter.Fill(table);
+                    dataGridView1.DataSource = table;
+
+                    // Ocultar columna ID si no deseas mostrarla
+                    dataGridView1.Columns["id"].Visible = false;
+                }
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error al cargar los datos: {ex.Message}");
+                MessageBox.Show("Error al cargar los datos: " + ex.Message);
             }
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            // ✅ Cadena de conexión: asegúrate de poner la correcta según tu base de datos
-            string connectionString = "Data Source=JOSUE;Initial Catalog=Prtotipo;Integrated Security=True";
-
-            // ✅ Validación de campos (evita errores si un TextBox es null)
-            if ((txtCodigo?.Text ?? "").Trim() == "" ||
-                (txtNombre?.Text ?? "").Trim() == "" ||
-                (txtDescripcion?.Text ?? "").Trim() == "" ||
-                (txtCantidad?.Text ?? "").Trim() == "" ||
-                (txtPrecioUnitario?.Text ?? "").Trim() == "" ||
-                (txtPrecioTotal?.Text ?? "").Trim() == "" ||
-                (txtTotalFinal?.Text ?? "").Trim() == "")
+            // Validar campos vacíos
+            if (string.IsNullOrWhiteSpace(txtcodigo.Text) ||
+                string.IsNullOrWhiteSpace(txtnombre.Text) ||
+                string.IsNullOrWhiteSpace(txtdescripcion.Text) ||
+                string.IsNullOrWhiteSpace(txtcantidad.Text) ||
+                string.IsNullOrWhiteSpace(txtpreciounitario.Text) ||
+                string.IsNullOrWhiteSpace(textBox2.Text)) // textBox2 = Precio Total
             {
-                MessageBox.Show("Por favor complete todos los campos.");
+                MessageBox.Show("Por favor complete todos los campos.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
+            // Validación y conversión segura
+            if (!int.TryParse(txtcodigo.Text.Trim(), out int codigo))
+            {
+                MessageBox.Show("El código debe ser un número entero.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (!decimal.TryParse(txtcantidad.Text.Trim(), out decimal cantidad))
+            {
+                MessageBox.Show("La cantidad debe ser un número válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (!decimal.TryParse(txtpreciounitario.Text.Trim(), out decimal precioUnitario))
+            {
+                MessageBox.Show("El precio unitario debe ser un número válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (!decimal.TryParse(textBox2.Text.Trim(), out decimal precioTotal))
+            {
+                MessageBox.Show("El precio total debe ser un número válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            decimal totalFinal = cantidad * precioUnitario;
+
             try
             {
-                using (SqlConnection connection = new SqlConnection(connectionString))
+                using (SqlConnection connection = new SqlConnection("Server=localhost\\SQLEXPRESS;Database=Prototipo;Trusted_Connection=True;"))
                 {
-                    string query = @"INSERT INTO RegistroVentas 
-                             (Codigo, Fecha, Nombre, Descripcion, Cantidad, PrecioUnitario, PrecioTotal, TotalFinal)
-                             VALUES (@Codigo, @Fecha, @Nombre, @Descripcion, @Cantidad, @PrecioUnitario, @PrecioTotal, @TotalFinal)";
+                    connection.Open();
+
+                    string query = @"INSERT INTO productos 
+                            (Codigo, Nombre, Descripcion, Cantidad, PrecioUnitario, PrecioTotal)
+                             VALUES (@Codigo, @Nombre, @Descripcion, @Cantidad, @PrecioUnitario, @PrecioTotal)";
 
                     SqlCommand command = new SqlCommand(query, connection);
-
-                    // ✅ Conversión segura de datos
-                    int codigo = int.TryParse(txtCodigo.Text, out int c) ? c : 0;
-                    decimal cantidad = decimal.TryParse(txtCantidad.Text, out decimal cant) ? cant : 0;
-                    decimal precioUnitario = decimal.TryParse(txtPrecioUnitario.Text, out decimal pu) ? pu : 0;
-                    decimal precioTotal = decimal.TryParse(txtPrecioTotal.Text, out decimal pt) ? pt : 0;
-                    decimal totalFinal = decimal.TryParse(txtTotalFinal.Text, out decimal tf) ? tf : 0;
-
-                    // ✅ Agregar parámetros a la consulta
                     command.Parameters.AddWithValue("@Codigo", codigo);
-                    command.Parameters.AddWithValue("@Fecha", dtpFecha.Value.Date); // DateTimePicker
-                    command.Parameters.AddWithValue("@Nombre", txtNombre.Text.Trim());
-                    command.Parameters.AddWithValue("@Descripcion", txtDescripcion.Text.Trim());
+                    command.Parameters.AddWithValue("@Nombre", txtnombre.Text.Trim());
+                    command.Parameters.AddWithValue("@Descripcion", txtdescripcion.Text.Trim());
                     command.Parameters.AddWithValue("@Cantidad", cantidad);
                     command.Parameters.AddWithValue("@PrecioUnitario", precioUnitario);
                     command.Parameters.AddWithValue("@PrecioTotal", precioTotal);
-                    command.Parameters.AddWithValue("@TotalFinal", totalFinal);
 
-                    connection.Open();
                     command.ExecuteNonQuery();
-
-                    MessageBox.Show("Registro guardado correctamente.");
                 }
+                CargarDatos();
+
+                MessageBox.Show("Compra registrada correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al guardar: " + ex.Message);
+                MessageBox.Show("Error al guardar en base de datos: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -123,39 +143,58 @@ namespace Prototipo
             {
                 if (dataGridView1.SelectedRows.Count > 0)
                 {
-                    int id = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["id"].Value);
+                    object value = dataGridView1.SelectedRows[0].Cells["id"].Value;
+                    if (value == null || !int.TryParse(value.ToString(), out int id))
+                    {
+                        MessageBox.Show("ID inválido.");
+                        return;
+                    }
 
-                    string query = "UPDATE compra SET Codigo = @Codigo, Nombre = @Nombre, Descripcion = @Descripcion, Cantidad = @Cantidad, PrecioUnitario = @PrecioUnitario, PrecioTotal = @PrecioTotal WHERE id = @Id";
-                    SqlCommand command = new SqlCommand(query, connection);
+                    // Validar los campos numéricos
+                    if (!decimal.TryParse(txtcantidad.Text.Trim(), out decimal cantidad) ||
+                        !decimal.TryParse(txtpreciounitario.Text.Trim(), out decimal precioUnitario) ||
+                        !decimal.TryParse(textBox2.Text.Trim(), out decimal precioTotal))
+                    {
+                        MessageBox.Show("Ingrese valores numéricos válidos en Cantidad, Precio Unitario y Precio Total.");
+                        return;
+                    }
 
-                    command.Parameters.AddWithValue("@Codigo", txtCodigo.Text);
-                    command.Parameters.AddWithValue("@Nombre", txtNombre.Text);
-                    command.Parameters.AddWithValue("@Descripcion", txtDescripcion.Text);
-                    command.Parameters.AddWithValue("@Cantidad", Convert.ToInt32(txtCantidad.Text));
-                    command.Parameters.AddWithValue("@PrecioUnitario", Convert.ToDecimal(txtPrecioUnitario.Text));
-                    command.Parameters.AddWithValue("@PrecioTotal", Convert.ToDecimal(txtPrecioTotal.Text));
-                    command.Parameters.AddWithValue("@Id", id);
+                    using (SqlConnection connection = new SqlConnection("Server=localhost\\SQLEXPRESS;Database=Prototipo;Trusted_Connection=True;"))
+                    {
+                        connection.Open();
 
-                    connection.Open();
-                    command.ExecuteNonQuery();
-                    MessageBox.Show("Registro actualizado correctamente.");
-                    CargarRegistros();
+                        string query = @"UPDATE productos 
+                             SET Codigo = @Codigo, Nombre = @Nombre, Descripcion = @Descripcion, 
+                                 Cantidad = @Cantidad, PrecioUnitario = @PrecioUnitario, 
+                                 PrecioTotal = @PrecioTotal 
+                             WHERE id = @Id";
+
+                        SqlCommand command = new SqlCommand(query, connection);
+                        command.Parameters.AddWithValue("@Codigo", txtcodigo.Text.Trim());
+                        command.Parameters.AddWithValue("@Nombre", txtnombre.Text.Trim());
+                        command.Parameters.AddWithValue("@Descripcion", txtdescripcion.Text.Trim());
+                        command.Parameters.AddWithValue("@Cantidad", cantidad);
+                        command.Parameters.AddWithValue("@PrecioUnitario", precioUnitario);
+                        command.Parameters.AddWithValue("@PrecioTotal", precioTotal);
+                        command.Parameters.AddWithValue("@Id", id);
+
+                        command.ExecuteNonQuery();
+                    }
+
+                    MessageBox.Show("Registro actualizado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    CargarDatos();
                 }
                 else
                 {
-                    MessageBox.Show("Selecciona un registro para editar.");
+                    MessageBox.Show("Selecciona un registro para editar.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error al editar: {ex}");
-            }
-            finally
-            {
-                if (connection.State == ConnectionState.Open)
-                    connection.Close();
+                MessageBox.Show($"Error al editar: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
@@ -164,13 +203,18 @@ namespace Prototipo
                 if (dataGridView1.SelectedRows.Count > 0)
                 {
                     int id = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["id"].Value);
-                    string query = "DELETE FROM compra WHERE id = @Id";
-                    SqlCommand command = new SqlCommand(query, connection);
-                    command.Parameters.AddWithValue("@Id", id);
-                    connection.Open();
-                    command.ExecuteNonQuery();
+
+                    using (SqlConnection connection = new SqlConnection("Server=localhost\\SQLEXPRESS;Database=Prototipo;Trusted_Connection=True;"))
+                    {
+                        connection.Open();
+                        string query = "DELETE FROM productos WHERE id = @Id";
+                        SqlCommand command = new SqlCommand(query, connection);
+                        command.Parameters.AddWithValue("@Id", id);
+                        command.ExecuteNonQuery();
+                    }
+
                     MessageBox.Show("Registro eliminado correctamente.");
-                    CargarRegistros();
+                    CargarDatos();
                 }
                 else
                 {
@@ -179,12 +223,7 @@ namespace Prototipo
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error al eliminar: {ex}");
-            }
-            finally
-            {
-                if (connection.State == ConnectionState.Open)
-                    connection.Close();
+                MessageBox.Show($"Error al eliminar: {ex.Message}");
             }
         }
 
@@ -271,7 +310,7 @@ namespace Prototipo
 
         private void Form8_Load(object sender, EventArgs e)
         {
-            CargarRegistros();
+            CargarDatos();
         }
 
         private void btnImprimir_Click(object sender, EventArgs e)
@@ -299,6 +338,16 @@ namespace Prototipo
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+          
         }
     }
 }

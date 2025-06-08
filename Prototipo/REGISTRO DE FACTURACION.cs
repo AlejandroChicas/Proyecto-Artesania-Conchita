@@ -48,36 +48,67 @@ namespace Prototipo
             LimpiarCampos();
         }
 
+
+
         private void btnModificar_Click(object sender, EventArgs e)
         {
             if (dataGridView1.SelectedRows.Count > 0)
             {
                 int id = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["Id"].Value);
-                using (SqlConnection connection = new SqlConnection(connectionString))
+
+                // Validaciones seguras
+                if (!int.TryParse(textBox3.Text.Trim(), out int cantidad))
+                {
+                    MessageBox.Show("Ingrese una cantidad válida (solo números enteros).", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                if (!decimal.TryParse(textBox1.Text.Trim(), out decimal precio))
+                {
+                    MessageBox.Show("Ingrese un precio válido (ej. 10.50).", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                if (!decimal.TryParse(textBox5.Text.Trim(), out decimal precioTotal))
+                {
+                    MessageBox.Show("Ingrese un precio total válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                decimal totalFinal = cantidad * precio;
+
+                using (SqlConnection connection = new SqlConnection("Server=localhost\\SQLEXPRESS;Database=Prototipo;Trusted_Connection=True;"))
                 {
                     connection.Open();
-                    string query = "UPDATE facturacion SET Fecha = @Fecha, NIT_DUI = @NIT_DUI, NombreCliente = @NombreCliente, Direccion = @Direccion, Cuenta = @Cuenta , " +
-                        "Cantidad = @Cantidad , Descripcion = @Descripcion , Precio = @Precio , PrecioTotal = @PrecioTotal , TotalFinal = TotalFinal WHERE Id = @Id";
+
+                    string query = "UPDATE Facturacion SET Fecha = @Fecha, NIT_DUI = @NIT_DUI, NombreCliente = @NombreCliente, Direccion = @Direccion, Cuenta = @Cuenta, " +
+                                   "Cantidad = @Cantidad, Descripcion = @Descripcion, Precio = @Precio, PrecioTotal = @PrecioTotal, TotalFinal = @TotalFinal WHERE Id = @Id";
+
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
-                        command.Parameters.AddWithValue("@Fecha", dateTimePicker1.Value);
-                        command.Parameters.AddWithValue("@NIT_DUI", txtNitDui.Text);
-                        command.Parameters.AddWithValue("@NombreCliente", txtNombreCliente.Text);
-                        command.Parameters.AddWithValue("@Direccion", txtDireccion.Text);
-                        command.Parameters.AddWithValue("@Cuenta", txtCuenta.Text);
+                        command.Parameters.AddWithValue("@Fecha", dateTimePicker1.Value.Date);
+                        command.Parameters.AddWithValue("@NIT_DUI", txtNitDui.Text.Trim());
+                        command.Parameters.AddWithValue("@NombreCliente", txtNombreCliente.Text.Trim());
+                        command.Parameters.AddWithValue("@Direccion", txtDireccion.Text.Trim());
+                        command.Parameters.AddWithValue("@Cuenta", txtCuenta.Text.Trim());
+                        command.Parameters.AddWithValue("@Cantidad", cantidad);
+                        command.Parameters.AddWithValue("@Descripcion", textBox2.Text.Trim());
+                        command.Parameters.AddWithValue("@Precio", precio);
+                        command.Parameters.AddWithValue("@PrecioTotal", precioTotal);
+                        command.Parameters.AddWithValue("@TotalFinal", totalFinal);
                         command.Parameters.AddWithValue("@Id", id);
-                        command.Parameters.AddWithValue("@Cantidad", textBox3.Text);
-                        command.Parameters.AddWithValue("@Descripcion", textBox1.Text);
-                        command.Parameters.AddWithValue("@Precio", textBox1.Text);
-                        command.Parameters.AddWithValue("@PrecioTotal", textBox5.Text);
-                        // Aquí puedes calcular el TotalFinal si es necesario
-                        command.Parameters.AddWithValue("@TotalFinal", totalFinal); // Asumiendo que tienes una variable para TotalFinal
 
                         command.ExecuteNonQuery();
                     }
                 }
+
                 CargarDatos();
                 LimpiarCampos();
+                MessageBox.Show("Registro modificado correctamente", "Modificación", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Seleccione una fila para modificar.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 

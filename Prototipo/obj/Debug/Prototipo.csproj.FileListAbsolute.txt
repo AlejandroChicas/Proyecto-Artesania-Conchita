@@ -353,3 +353,12 @@ C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\obj\Debug\Protot
 C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\itextsharp.dll
 C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\itextsharp.xml
 C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\obj\Debug\Prototipo.AYUDA_DE_INVENTARIO.resources
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\selenium-manager\linux\selenium-manager
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\selenium-manager\macos\selenium-manager
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\selenium-manager\windows\selenium-manager.exe
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\System.Text.Json.dll
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\WebDriver.dll
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\System.Text.Json.xml
+C:\Users\josue\OneDrive\Escritorio\ARTESANIA CONCHITA\Prototipo\bin\Debug\WebDriver.xml
